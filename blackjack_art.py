@@ -8,15 +8,3 @@ logo = """
       |  \/ K|                            _/ |                
       `------'                           |__/           
 """
-
-# deal_more_cards = True
-
-#     while deal_more_cards:
-#         deal_another_card = input('Type "y" to get another card, type "n" to pass: ').lower()
-        
-#         if deal_another_card == 'y':
-#             user_next_card = random.choice(cards)
-#             user_cards.append(user_next_card)
-#             print(f'Your cards: {user_cards}, current score: {sum(user_cards)}')
-#         else:
-#             deal_more_cards = False
