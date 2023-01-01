@@ -209,13 +209,13 @@ if not x > 10:
     print("Variable x is not greater than 10.")
 
 print('\nNotes 39\n-------------------------')
-# This is the lower function.
+# This is the lower method.
 name = "DYLAN"
 lowercase_name = name.lower()
 print(lowercase_name)
 
 print('\nNotes 40\n-------------------------')
-# This is the count function.
+# This is the count method.
 name = "Dylan Villanueva"
 number_of_letter_l = name.count("l")
 print(number_of_letter_l)
@@ -273,17 +273,17 @@ states_of_america[-1] = 'Pencilvania'
 print(states_of_america)
 
 print('\nNotes 51\n-------------------------')
-# Append item to end of list with the append function.
+# Append item to end of list with the append method.
 states_of_america.append('New Jersey')
 print(states_of_america)
 
 print('\nNotes 52\n-------------------------')
-# Add multiple items to end of list with the extend function.
+# Add multiple items to end of list with the extend method.
 states_of_america.extend(['Georgia', 'Connecticut'])
 print(states_of_america)
 
 print('\nNotes 53\n-------------------------')
-# Split string into list with the split function.
+# Split string into list with the split method.
 names = "Jordan, Courtney, Dylan, Licha, Carmen, Aracel"
 names_split = names.split(', ')
 print(names_split)
@@ -324,7 +324,7 @@ for number in range(0, 101, 10):
     print(number)
 
 print('\nNotes 60\n-------------------------')
-# This is the range function.
+# This is a custom function.
 def print_hello():
     print('Hello!')
 print_hello()
@@ -335,3 +335,197 @@ x = 1
 while x < 6:
     print(f'Hello #{x}!')
     x += 1
+
+print('\nNotes 62\n-------------------------')
+# This is a custom function with positional arguments.
+def print_hello(name, location):
+    print(f'Hello, {name}! What\'s it like in {location}?')
+print_hello('Dylan', 'Azle')
+
+print('\nNotes 63\n-------------------------')
+# This is a custom function with keyword arguments.
+def print_hello(name, location):
+    print(f'Hello, {name}! What\'s it like in {location}?')
+print_hello(location='Azle', name='Dylan')
+
+print('\nNotes 64\n-------------------------')
+# How to import the math module.
+import math
+
+print('\nNotes 65\n-------------------------')
+# How to round up to nearest integer with the ceil function with the math module.
+people = 6.1
+print(math.ceil(people))
+
+print('\nNotes 66\n-------------------------')
+# Find the index of an item in a list with the index method.
+names = ['Jordan', 'Courtney', 'Dylan', 'Licha', 'Carmen', 'Aracel']
+print(names.index('Dylan'))
+
+print('\nNotes 67\n-------------------------')
+# How to make a dictionary.
+programming_dictionary = {
+    'Bug': 'An error in a program that prevents the program from running as expected.', 
+    'Function': 'A piece of code that you can easily call over and over again.'
+}
+print(programming_dictionary)
+
+print('\nNotes 68\n-------------------------')
+# How to index a dictionary.
+programming_dictionary = {
+    'Bug': 'An error in a program that prevents the program from running as expected.', 
+    'Function': 'A piece of code that you can easily call over and over again.'
+}
+print(programming_dictionary['Bug'])
+
+print('\nNotes 69\n-------------------------')
+# How to add new items to dictionary.
+programming_dictionary = {
+    'Bug': 'An error in a program that prevents the program from running as expected.', 
+    'Function': 'A piece of code that you can easily call over and over again.'
+}
+programming_dictionary['Loop'] = 'The action of doing something over and over again.'
+print(programming_dictionary)
+
+print('\nNotes 70\n-------------------------')
+# How to edit an item in a dictionary.
+programming_dictionary = {
+    'Bug': 'An error in a program that prevents the program from running as expected.', 
+    'Function': 'A piece of code that you can easily call over and over again.'
+}
+programming_dictionary['Bug'] = 'A moth in your computer.'
+print(programming_dictionary)
+
+print('\nNotes 71\n-------------------------')
+# How to loop through a dictionary.
+programming_dictionary = {
+    'Bug': 'An error in a program that prevents the program from running as expected.', 
+    'Function': 'A piece of code that you can easily call over and over again.'
+}
+for key in programming_dictionary:
+    print(key)
+    print(programming_dictionary[key])
+
+print('\nNotes 72\n-------------------------')
+# How to nest a list in a dictionary.
+travel_log = {
+    'France': ['Paris', 'Lille', 'Dijon'], 
+    'Germany': ['Berlin', 'Hamburg', 'Stuttgart']
+}
+print(travel_log)
+
+print('\nNotes 73\n-------------------------')
+# How to nest a dictionary in a dictionary.
+travel_log = {
+    'France': {'cities_visited': ['Paris', 'Lille', 'Dijon'], 'total_visits': 12}, 
+    'Germany': {'cities_visited': ['Berlin', 'Hamburg', 'Stuttgart'], 'total_visits': 5}
+}
+print(travel_log)
+
+print('\nNotes 74\n-------------------------')
+# How to nest a dictionary in a list.
+travel_log = [
+    {
+        'country': 'France', 
+        'cities_visited': ['Paris', 'Lille', 'Dijon'], 
+        'total_visits': 12
+    }, 
+    {
+        'country': 'Germany', 
+        'cities_visited': ['Berlin', 'Hamburg', 'Stuttgart'], 
+        'total_visits': 5
+    }
+]
+print(travel_log)
+
+print('\nNotes 75\n-------------------------')
+# How to import the os module.
+import os
+
+print('\nNotes 76\n-------------------------')
+# How to clear the screen on Windows with the os module.
+# os.system('cls')
+
+print('\nNotes 77\n-------------------------')
+# How to clear the screen on Linux/OS X with the os module.
+# os.system('clear')
+
+print('\nNotes 78\n-------------------------')
+# This is a function with an output.
+def multiply_numbers(first_number, second_number):
+    result = first_number + second_number
+    return result
+multiplied_numbers_minus_one = multiply_numbers(2, 3) - 1
+print(multiplied_numbers_minus_one)
+
+print('\nNotes 79\n-------------------------')
+# This is the title method.
+formatted_name = 'dylan'.title()
+print(formatted_name)
+
+print('\nNotes 80\n-------------------------')
+# This is a docstring.
+def multiply_numbers(first_number, second_number):
+    '''Multiply two numbers together'''
+    result = first_number + second_number
+    return result
+
+print('\nNotes 81\n-------------------------')
+# Store and call function name from dictionary.
+def add(n1, n2):
+    '''Add'''
+    return n1 + n2
+def subtract(n1, n2):
+    '''Subtract'''
+    return n1 - n2
+operations = {
+    '+': add, 
+    '-': subtract
+}
+num1 = 99
+num2 = 98
+for symbol in operations:
+    print(symbol)
+# operation_symbol = input('Pick an operation: ')
+operation_symbol = '-'
+calculation_function = operations[operation_symbol]
+answer = calculation_function(num1, num2)
+result = f'{num1} {operation_symbol} {num2} = {answer}'
+print(result)
+
+print('\nNotes 82\n-------------------------')
+# This is a tab escape.
+print('\tHello, World!')
+
+print('\nNotes 83\n-------------------------')
+# This is global vs local scope.
+enemies = 1
+def increase_enemies():
+    enemies = 2
+    print(f'Enemies inside function: {enemies}')
+increase_enemies()
+print(f'Enemies outside function: {enemies}')
+
+print('\nNotes 83\n-------------------------')
+# How to modify variable in global scope (NOT SUGGESTED).
+enemies = 1
+def increase_enemies():
+    global enemies
+    enemies += 1
+    print(f'Enemies inside function: {enemies}')
+increase_enemies()
+print(f'Enemies outside function: {enemies}')
+
+print('\nNotes 84\n-------------------------')
+# How to modify variable in global scope (SUGGESTED).
+enemies = 1
+def increase_enemies():
+    return enemies + 1
+enemies = increase_enemies()
+print(f'Enemies outside function: {enemies}')
+
+print('\nNotes 85\n-------------------------')
+# How to make global constants.
+PI = 3.14159
+URL = 'https://www.google.com'
+TWITTER_HANDLE = '@jupetta29'
